@@ -12,7 +12,7 @@ jsapi_ticket="$apps/libs/JiuYang/Extensions/Wechats/jsapi_ticket.txt"
 log="/tmp/beta_install.log"
 date=`date +%Y-%m-%d-%T`
 ip=`ip a |grep -e "eno" -e "eth" | grep --o "[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}"|grep -v "$255"`
-mysql_pass="p@ssw0rd456"
+mysql_pass="p@ssw0rd"
 files="$pwd/files"
 template="$pwd/template"
 mobiletemplate="$pwd/mobiletemplate"
@@ -22,7 +22,7 @@ nginx_conf_file="/etc/openresty/conf.d/${date}.conf"
 clear
 echo -e "\033[31m \033[05m Project source code download now, please wait......\033[0m"
 cd $pwd 
-git clone -b release_2.0 ssh://admin@git.mesyun.net:29418/JiuYangPErp.git
+git clone -b release_2.0 ssh://admin@127.0.0.1:29418/JiuYangPErp.git
 if [ $? -eq 0 ];then echo "Project Download success!";else echo "Project Download failed!!!";exit;fi
 
 #re-write namespace and filename
