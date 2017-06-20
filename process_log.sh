@@ -11,4 +11,4 @@ sudo awk 'BEGIN {RS= "'$day'" } $1 > "'$start_time'" && $1 < "'$stop_time'"{prin
 awk BEGIN'{RS="Connect"}{print $1}' $2 |uniq -c|sort -n -r
 #read -p "请输入你想查看的用户的操作："user
 #awk BEGIN'{RS="Connect"}{if [ "$1" = "$user" ];then {print $0};fi }
-#awk BEGIN'{RS="Connect"}{if($1=="haowei.*");print $0}''
+#awk BEGIN'{RS="Connect"}{if($1=="simin.*");print $0}''
